@@ -51,17 +51,17 @@ export function renderOverview() {
         <!-- Chat Body -->
         <div id="chat-messages" class="flex flex-col gap-6 p-6 md:p-8 min-h-[400px] max-h-[500px] overflow-y-auto bg-surface-container-lowest">
           <!-- Welcome Message -->
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-md">
-              <span class="material-symbols-outlined text-white font-light text-lg">support_agent</span>
-            </div>
-            <div class="bg-surface-container-low p-5 border border-outline-variant/10 max-w-[85%] rounded-r-xl rounded-bl-xl text-left">
+          <div class="flex items-start gap-4 justify-start w-full">
+            <div class="bg-white p-6 border border-[#e5e7eb] max-w-[calc(100%-56px)] flex flex-col gap-4 text-left shadow-sm rounded">
               <p class="font-body text-sm text-on-surface myanmar-text">
-                မင်္ဂလာပါရှင်။ မြန်မာခရီးသွား AI မှ ကြိုဆိုပါတယ်။ Bagan၊ Yangon ခရီးစဉ်များ သို့မဟုတ် ခရီးသွားသတင်းအချက်အလက်များကို မေးမြန်းနိုင်ပါတယ်။
+                မင်္ဂလာပါရှင်။ မြန်မာခရီးသွား AI မှ ကြိုဆိုပါတယ်။ Bagan၊ Yangon ခရီးစဉ်များ သို့မဟုတ် ခရီးသွားသေတင်းအချက်အလက်များကို မေးမြန်းနိုင်ပါတယ်။
               </p>
-              <p class="font-body text-xs text-slate-gray mt-2">
+              <p class="font-body text-xs text-slate-gray">
                 Hello! Welcome to Myanmar Tourism AI. Ask me about travel details, destinations like Bagan, or emergency contacts.
               </p>
+            </div>
+            <div class="w-10 h-10 rounded bg-primary flex items-center justify-center shrink-0 shadow-md">
+              <span class="material-symbols-outlined text-white font-light text-xl">smart_toy</span>
             </div>
           </div>
         </div>
@@ -214,29 +214,19 @@ export function renderOverview() {
       responseHtml: `
         <div class="flex justify-between items-center pb-3 border-b border-outline-variant/20">
           <span class="font-headline text-base text-primary font-bold tracking-tight">Bagan Top Temples</span>
-          <button class="speak-btn text-primary/60 hover:text-primary transition-colors flex items-center gap-1 text-xs font-semibold" data-speak="For Bagan, we highly recommend visiting: Ananda Temple, known as the architectural masterpiece. Dhammayangyi Temple, the largest and widest. And Shwezigon Pagoda, a prototype of Burmese stupas, completely gold plated.">
-            <span class="material-symbols-outlined font-light text-base">volume_up</span> Speak
+          <button class="speak-btn text-primary/60 hover:text-primary transition-colors flex items-center gap-1 text-xs font-semibold focus:outline-none" data-speak="For Bagan, we highly recommend visiting: Ananda Temple, known as the architectural masterpiece. Dhammayangyi Temple, the largest and widest. And Shwezigon Pagoda, a prototype of Burmese stupas, completely gold plated.">
+            <span class="material-symbols-outlined font-light text-base">volume_up</span>
           </button>
         </div>
-        <p class="font-body text-xs text-slate-gray italic mb-3">RAG Data Source: Union of Myanmar Travel Association (UMTA) verified heritage catalog.</p>
-        <ul class="font-body text-sm text-on-surface-variant space-y-3">
-          <li class="flex items-start gap-3">
-            <span class="w-1.5 h-1.5 mt-2 bg-primary rounded-full shrink-0"></span>
-            <span><strong class="text-on-surface font-semibold">Ananda Temple:</strong> Known as the architectural masterpiece of Bagan, built in 1105 AD.</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="w-1.5 h-1.5 mt-2 bg-primary rounded-full shrink-0"></span>
-            <span><strong class="text-on-surface font-semibold">Dhammayangyi Temple:</strong> The largest and widest temple, built in the late 12th century.</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="w-1.5 h-1.5 mt-2 bg-primary rounded-full shrink-0"></span>
-            <span><strong class="text-on-surface font-semibold">Shwezigon Pagoda:</strong> A prototype of Burmese stupas, completely gold-plated, finished in 1102 AD.</span>
-          </li>
+        <ul class="list-disc pl-5 font-body text-sm text-on-surface-variant space-y-3 mt-3">
+          <li><strong>Ananda Temple:</strong> Known as the architectural masterpiece of Bagan.</li>
+          <li><strong>Dhammayangyi Temple:</strong> The largest and widest temple in Bagan.</li>
+          <li><strong>Shwezigon Pagoda:</strong> A prototype of Burmese stupas, completely gold-plated.</li>
         </ul>
-        <div class="mt-4 rounded-md overflow-hidden border border-outline-variant/20 relative group">
-          <img alt="Bagan Map" class="w-full h-44 object-cover opacity-90 transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1D1eTSVmJco4gMvhvQnra4E235jK4b-qlmFQnYBxyr3j7uBOnxRWAx_ysr2M1qwUFy1_QuJyhJB_BMLzbF6-JbE2rSKWjGJvEbfCs4N8MpIiVBcvt7x4P8LJnSI3kkbxD07eiZ8bP0r_Gsm4-K9gr6yuC6DRGVZImLrwiXJ5wEuaMwEExci0vrc3oWMIyYWMREQERsECTSA47tXR7MEpdgfjpxAEjvEb84fb3kHnFNY4W00hx_h1Cwyu6xvvHIk_HkNgbcSdt0FSx"/>
-          <div class="absolute bottom-3 left-3">
-            <span class="font-label text-[9px] tracking-widest text-primary font-bold bg-white/95 px-3 py-1.5 border border-outline-variant/20 shadow-md uppercase rounded-[2px]">View Interactive Map</span>
+        <div class="mt-4 rounded border border-outline-variant/20 relative overflow-hidden">
+          <img alt="Bagan Map" class="w-full h-auto object-cover" src="/bagan_map.png"/>
+          <div class="absolute bottom-4 left-4">
+            <button class="font-label text-[10px] tracking-widest text-primary font-bold bg-white px-4 py-2 border border-outline-variant/20 shadow-sm uppercase rounded-[2px] hover:bg-slate-50 transition-colors">View Interactive Map</button>
           </div>
         </div>
       `
@@ -246,24 +236,14 @@ export function renderOverview() {
       responseHtml: `
         <div class="flex justify-between items-center pb-3 border-b border-outline-variant/20">
           <span class="font-headline text-base text-primary font-bold tracking-tight">Emergency Helplines</span>
-          <button class="speak-btn text-primary/60 hover:text-primary transition-colors flex items-center gap-1 text-xs font-semibold" data-speak="Here are the emergency numbers in Myanmar: Tourist Police hotline is 199 or 01-549209. Fire department is 191. Ambulance is 192. Always keep these handy.">
-            <span class="material-symbols-outlined font-light text-base">volume_up</span> Speak
+          <button class="speak-btn text-primary/60 hover:text-primary transition-colors flex items-center gap-1 text-xs font-semibold focus:outline-none" data-speak="Here are the emergency numbers in Myanmar: Tourist Police hotline is 199 or 01-549209. Fire department is 191. Ambulance is 192. Always keep these handy.">
+            <span class="material-symbols-outlined font-light text-base">volume_up</span>
           </button>
         </div>
-        <p class="font-body text-xs text-slate-gray italic mb-3">RAG Data Source: Myanmar Ministry of Hotels and Tourism Official Directory.</p>
-        <ul class="font-body text-sm text-on-surface-variant space-y-3">
-          <li class="flex items-start gap-3">
-            <span class="w-1.5 h-1.5 mt-2 bg-red-500 rounded-full shrink-0"></span>
-            <span><strong class="text-on-surface font-semibold">Tourist Police:</strong> 199 or 01-549209 (Active 24/7 with English support)</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="w-1.5 h-1.5 mt-2 bg-red-500 rounded-full shrink-0"></span>
-            <span><strong class="text-on-surface font-semibold">Fire Department:</strong> 191 (General emergency dispatch)</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="w-1.5 h-1.5 mt-2 bg-red-500 rounded-full shrink-0"></span>
-            <span><strong class="text-on-surface font-semibold">Ambulance Services:</strong> 192 (Red Cross & General Hospitals)</span>
-          </li>
+        <ul class="list-disc pl-5 font-body text-sm text-on-surface-variant space-y-3 mt-3">
+          <li><strong>Tourist Police:</strong> 199 or 01-549209 (Active 24/7 with English support)</li>
+          <li><strong>Fire Department:</strong> 191 (General emergency dispatch)</li>
+          <li><strong>Ambulance Services:</strong> 192 (Red Cross & General Hospitals)</li>
         </ul>
       `
     },
@@ -272,24 +252,14 @@ export function renderOverview() {
       responseHtml: `
         <div class="flex justify-between items-center pb-3 border-b border-outline-variant/20">
           <span class="font-headline text-base text-primary font-bold tracking-tight">Cultural Etiquette</span>
-          <button class="speak-btn text-primary/60 hover:text-primary transition-colors flex items-center gap-1 text-xs font-semibold" data-speak="When visiting pagoda grounds, please remove your shoes and socks. Dress modestly, covering shoulders and knees. Never touch anyone on the head, as it is considered the most sacred part of the body.">
-            <span class="material-symbols-outlined font-light text-base">volume_up</span> Speak
+          <button class="speak-btn text-primary/60 hover:text-primary transition-colors flex items-center gap-1 text-xs font-semibold focus:outline-none" data-speak="When visiting pagoda grounds, please remove your shoes and socks. Dress modestly, covering shoulders and knees. Never touch anyone on the head, as it is considered the most sacred part of the body.">
+            <span class="material-symbols-outlined font-light text-base">volume_up</span>
           </button>
         </div>
-        <p class="font-body text-xs text-slate-gray italic mb-3">RAG Data Source: Union of Myanmar Travel Association (UMTA) cultural guides.</p>
-        <ul class="font-body text-sm text-on-surface-variant space-y-3">
-          <li class="flex items-start gap-3">
-            <span class="w-1.5 h-1.5 mt-2 bg-yellow-600 rounded-full shrink-0"></span>
-            <span><strong class="text-on-surface font-semibold">Footwear:</strong> Always remove shoes and socks before entering pagoda grounds and religious sites.</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="w-1.5 h-1.5 mt-2 bg-yellow-600 rounded-full shrink-0"></span>
-            <span><strong class="text-on-surface font-semibold">Modesty:</strong> Wear appropriate clothing (shoulders and knees covered). Avoid shorts and sleeveless shirts on pagoda grounds.</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="w-1.5 h-1.5 mt-2 bg-yellow-600 rounded-full shrink-0"></span>
-            <span><strong class="text-on-surface font-semibold">Sacred Head:</strong> Do not touch the head of a local, as it is traditionally regarded as the most spiritually sacred part of the body.</span>
-          </li>
+        <ul class="list-disc pl-5 font-body text-sm text-on-surface-variant space-y-3 mt-3">
+          <li><strong>Footwear:</strong> Always remove shoes and socks before entering pagoda grounds and religious sites.</li>
+          <li><strong>Modesty:</strong> Wear appropriate clothing (shoulders and knees covered). Avoid shorts and sleeveless shirts on pagoda grounds.</li>
+          <li><strong>Sacred Head:</strong> Do not touch the head of a local, as it is traditionally regarded as the most spiritually sacred part of the body.</li>
         </ul>
       `
     }
@@ -301,13 +271,13 @@ export function renderOverview() {
 
   function appendUserMessage(text) {
     const msgDiv = document.createElement("div");
-    msgDiv.className = "flex items-start gap-4 flex-row-reverse";
+    msgDiv.className = "flex items-start gap-4 justify-start w-full";
     msgDiv.innerHTML = `
-      <div class="w-10 h-10 rounded-full bg-surface-container-low border border-outline-variant/20 flex items-center justify-center shrink-0">
-        <span class="material-symbols-outlined text-primary font-light text-lg">person</span>
+      <div class="w-10 h-10 rounded bg-[#f1f0ee] border border-outline-variant/15 flex items-center justify-center shrink-0">
+        <span class="material-symbols-outlined text-slate-gray font-light text-xl">person</span>
       </div>
-      <div class="bg-primary/5 p-4 border border-outline-variant/10 max-w-[85%] rounded-l-xl rounded-br-xl text-right">
-        <p class="font-body text-sm text-on-surface myanmar-text">${text}</p>
+      <div class="bg-[#f8f6f4] p-4 border border-[#e5e7eb] max-w-[85%] rounded text-left">
+        <p class="font-body text-sm text-[#1a1a1a] myanmar-text">${text}</p>
       </div>
     `;
     chatMessages.appendChild(msgDiv);
@@ -317,15 +287,15 @@ export function renderOverview() {
   function appendBotTypingIndicator() {
     const indicatorDiv = document.createElement("div");
     indicatorDiv.id = "chat-typing-indicator";
-    indicatorDiv.className = "flex items-start gap-4";
+    indicatorDiv.className = "flex items-start gap-4 justify-start w-full";
     indicatorDiv.innerHTML = `
-      <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-md">
-        <span class="material-symbols-outlined text-white font-light text-lg">support_agent</span>
-      </div>
-      <div class="bg-white p-5 border border-outline-variant/30 max-w-[85%] rounded-r-xl rounded-bl-xl text-left shadow-sm flex items-center gap-1">
+      <div class="bg-white p-5 border border-[#e5e7eb] max-w-[calc(100%-56px)] rounded shadow-sm flex items-center gap-1">
         <span class="w-2.5 h-2.5 bg-primary/40 rounded-full animate-bounce" style="animation-delay: 0ms"></span>
         <span class="w-2.5 h-2.5 bg-primary/60 rounded-full animate-bounce" style="animation-delay: 150ms"></span>
         <span class="w-2.5 h-2.5 bg-primary/80 rounded-full animate-bounce" style="animation-delay: 300ms"></span>
+      </div>
+      <div class="w-10 h-10 rounded bg-primary flex items-center justify-center shrink-0 shadow-md">
+        <span class="material-symbols-outlined text-white font-light text-xl">smart_toy</span>
       </div>
     `;
     chatMessages.appendChild(indicatorDiv);
@@ -339,13 +309,13 @@ export function renderOverview() {
 
   function appendBotMessage(responseHtml) {
     const msgDiv = document.createElement("div");
-    msgDiv.className = "flex items-start gap-4";
+    msgDiv.className = "flex items-start gap-4 justify-start w-full";
     msgDiv.innerHTML = `
-      <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-md">
-        <span class="material-symbols-outlined text-white font-light text-lg">support_agent</span>
-      </div>
-      <div class="bg-white p-6 border border-outline-variant/30 max-w-[90%] flex flex-col gap-4 text-left shadow-sm rounded-r-xl rounded-bl-xl">
+      <div class="bg-white p-6 border border-[#e5e7eb] max-w-[calc(100%-56px)] flex flex-col gap-4 text-left shadow-sm rounded">
         ${responseHtml}
+      </div>
+      <div class="w-10 h-10 rounded bg-primary flex items-center justify-center shrink-0 shadow-md">
+        <span class="material-symbols-outlined text-white font-light text-xl">smart_toy</span>
       </div>
     `;
     chatMessages.appendChild(msgDiv);
@@ -364,7 +334,7 @@ export function renderOverview() {
           
           // Visual feedback
           const originalContent = speakBtn.innerHTML;
-          speakBtn.innerHTML = `<span class="material-symbols-outlined animate-pulse text-red-500 font-light text-base">graphic_eq</span> Speaking...`;
+          speakBtn.innerHTML = `<span class="material-symbols-outlined animate-pulse text-red-500 font-light text-base">graphic_eq</span>`;
           speakBtn.disabled = true;
 
           utterance.onend = () => {
