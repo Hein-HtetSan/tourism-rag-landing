@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "copy-map": "cp /Users/heinhtetsan/.gemini/antigravity-ide/brain/5377d49f-4cc9-47fc-8e3a-4f34adc191a4/stitch_graphic_1780994652884.png public/bagan_map.png"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",

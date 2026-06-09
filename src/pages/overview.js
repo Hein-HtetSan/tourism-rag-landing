@@ -63,8 +63,8 @@ export function renderOverview() {
               <li><strong>Shwezigon Pagoda:</strong> A prototype of Burmese stupas, completely gold-plated.</li>
             </ul>
             <!-- Map Container -->
-            <div class="mt-4 rounded border border-outline-variant/20 relative overflow-hidden">
-              <img alt="Bagan Map" class="w-full h-auto object-cover" src="/bagan_map.png"/>
+            <div class="mt-4 h-[220px] w-full rounded border border-outline-variant/20 relative overflow-hidden">
+              <img alt="Bagan Map" class="w-full h-full object-cover object-center" src="/bagan_map.png"/>
               <div class="absolute bottom-4 left-4">
                 <button class="font-label text-[10px] tracking-widest text-primary font-bold bg-white px-4 py-2 border border-outline-variant/20 shadow-sm uppercase rounded-[2px] hover:bg-slate-50 transition-colors">View Interactive Map</button>
               </div>
