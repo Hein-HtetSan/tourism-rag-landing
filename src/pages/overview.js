@@ -20,8 +20,8 @@ export function renderOverview() {
         </p>
         <div class="flex flex-wrap justify-center gap-4 md:gap-6 pt-4">
           <button id="scroll-to-chat" class="btn-primary flex items-center gap-3">
-            <span class="material-symbols-outlined text-[20px] font-light">smart_toy</span>
-            Try Demo Bot
+            <span class="material-symbols-outlined text-[20px] font-light">play_circle</span>
+            Watch Demo Video
           </button>
           <a href="#/timeline" class="btn-secondary flex items-center gap-3">
             <span class="material-symbols-outlined text-[20px] font-light">description</span>
@@ -30,17 +30,17 @@ export function renderOverview() {
         </div>
       </div>
 
-      <!-- Interactive Chatbot Simulator -->
-      <div id="chat-simulator" class="w-full max-w-4xl mx-auto mt-20 md:mt-32 bg-white border border-outline-variant/30 relative overflow-hidden shadow-[0_40px_100px_-20px_rgba(0,38,34,0.08)] rounded-lg">
-        <!-- Chat Header -->
+      <!-- Demo Video Player -->
+      <div id="chat-simulator" class="w-full max-w-4xl mx-auto mt-20 md:mt-32 bg-white border border-outline-variant/30 relative overflow-hidden shadow-[0_40px_100px_-20px_rgba(0,38,34,0.08)] rounded-lg group">
+        <!-- Video Header -->
         <div class="bg-primary px-6 py-4 flex justify-between items-center text-white">
           <div class="flex items-center gap-3">
             <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
-              <span class="material-symbols-outlined text-white font-light text-xl">support_agent</span>
+              <span class="material-symbols-outlined text-white font-light text-xl">play_circle</span>
             </div>
             <div>
-              <div class="font-semibold text-sm">မြန်မာ ခရီးသွား AI</div>
-              <div class="text-[11px] opacity-80">RAG Assistant • Active 24/7</div>
+              <div class="font-semibold text-sm">မြန်မာ ခရီးသွား AI • Demo Video</div>
+              <div class="text-[11px] opacity-80">RAG Assistant in Action</div>
             </div>
           </div>
           <div class="flex gap-2">
@@ -48,45 +48,52 @@ export function renderOverview() {
           </div>
         </div>
 
-        <!-- Chat Body -->
-        <div id="chat-messages" class="flex flex-col gap-6 p-6 md:p-8 min-h-[400px] max-h-[500px] overflow-y-auto bg-surface-container-lowest">
-          <!-- Welcome Message -->
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-md">
-              <span class="material-symbols-outlined text-white font-light text-lg">support_agent</span>
+        <!-- Video Player Body -->
+        <div class="relative w-full aspect-video bg-black overflow-hidden flex items-center justify-center">
+          <video id="demo-video" class="w-full h-full object-cover" poster="/video_poster.png" loop playsinline>
+            <source src="/demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          
+          <!-- Big Play Button Overlay -->
+          <button id="video-play-overlay" class="absolute inset-0 w-full h-full flex items-center justify-center bg-black/30 hover:bg-black/45 transition-colors duration-300 z-10">
+            <div class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-primary/85 backdrop-blur-md border border-white/20 text-white flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110">
+              <span class="material-symbols-outlined text-4xl md:text-5xl font-light pl-1" id="overlay-play-icon">play_arrow</span>
             </div>
-            <div class="bg-surface-container-low p-5 border border-outline-variant/10 max-w-[85%] rounded-r-xl rounded-bl-xl text-left">
-              <p class="font-body text-sm text-on-surface myanmar-text">
-                မင်္ဂလာပါရှင်။ မြန်မာခရီးသွား AI မှ ကြိုဆိုပါတယ်။ Bagan၊ Yangon ခရီးစဉ်များ သို့မဟုတ် ခရီးသွားသတင်းအချက်အလက်များကို မေးမြန်းနိုင်ပါတယ်။
-              </p>
-              <p class="font-body text-xs text-slate-gray mt-2">
-                Hello! Welcome to Myanmar Tourism AI. Ask me about travel details, destinations like Bagan, or emergency contacts.
-              </p>
+          </button>
+
+          <!-- Custom Control Bar -->
+          <div id="video-controls" class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 via-black/60 to-transparent flex flex-col gap-3 transition-opacity duration-300 opacity-0 group-hover:opacity-100 z-20">
+            <!-- Progress Slider -->
+            <div class="relative w-full h-1.5 bg-white/20 rounded cursor-pointer group/progress animate-all duration-200" id="video-progress-bar">
+              <div class="absolute top-0 left-0 h-full bg-primary-fixed rounded" id="video-progress-fill" style="width: 0%"></div>
+              <div class="absolute top-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-white rounded-full border border-primary shadow opacity-0 group-hover/progress:opacity-100 transition-opacity duration-200" id="video-progress-handle" style="left: 0%"></div>
+            </div>
+
+            <!-- Controls Row -->
+            <div class="flex items-center justify-between text-white text-sm">
+              <div class="flex items-center gap-4">
+                <!-- Play/Pause Button -->
+                <button id="video-play-btn" class="hover:text-primary-fixed transition-colors duration-200 focus:outline-none flex items-center">
+                  <span class="material-symbols-outlined font-light text-2xl" id="play-btn-icon">play_arrow</span>
+                </button>
+                <!-- Time Display -->
+                <span class="font-label text-xs tracking-wider opacity-90" id="video-time">0:00 / 0:00</span>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <!-- Volume / Mute Button -->
+                <button id="video-mute-btn" class="hover:text-primary-fixed transition-colors duration-200 focus:outline-none flex items-center">
+                  <span class="material-symbols-outlined font-light text-2xl" id="mute-btn-icon">volume_up</span>
+                </button>
+                <!-- Fullscreen Button -->
+                <button id="video-fullscreen-btn" class="hover:text-primary-fixed transition-colors duration-200 focus:outline-none flex items-center">
+                  <span class="material-symbols-outlined font-light text-2xl">fullscreen</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- Predefined Quick Queries -->
-        <div class="px-6 py-3 bg-surface-container-low border-t border-b border-outline-variant/20 flex flex-wrap gap-2 text-left justify-start">
-          <span class="text-xs text-slate-gray font-medium w-full mb-1">Select a sample query to test:</span>
-          <button class="quick-query-btn px-3 py-1.5 bg-white hover:bg-primary/5 border border-outline-variant/40 rounded-[4px] text-xs font-medium text-primary transition-all duration-200" data-query="bagan">
-            🇲🇲 Bagan temples recommendations
-          </button>
-          <button class="quick-query-btn px-3 py-1.5 bg-white hover:bg-primary/5 border border-outline-variant/40 rounded-[4px] text-xs font-medium text-primary transition-all duration-200" data-query="emergency">
-            📞 Emergency helpline
-          </button>
-          <button class="quick-query-btn px-3 py-1.5 bg-white hover:bg-primary/5 border border-outline-variant/40 rounded-[4px] text-xs font-medium text-primary transition-all duration-200" data-query="customs">
-            🏯 Myanmar local customs
-          </button>
-        </div>
-
-        <!-- Chat Input Footer -->
-        <form id="chat-input-form" class="p-4 bg-white border-t border-outline-variant/20 flex gap-3">
-          <input id="chat-user-input" type="text" placeholder="Type your travel question here..." class="flex-grow px-4 py-3 bg-surface-container-lowest border border-outline-variant/40 rounded-[4px] font-body text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20" autocomplete="off" />
-          <button type="submit" class="bg-primary text-white px-5 rounded-[4px] hover:bg-heritage-jade transition-colors duration-200 flex items-center justify-center">
-            <span class="material-symbols-outlined text-xl">send</span>
-          </button>
-        </form>
       </div>
     </section>
 
@@ -203,230 +210,102 @@ export function renderOverview() {
     </section>
   `;
 
-  // --- Chatbot Simulator Interactivity ---
-  const chatMessages = container.querySelector("#chat-messages");
-  const chatForm = container.querySelector("#chat-input-form");
-  const userInput = container.querySelector("#chat-user-input");
+  // --- Video Player Controllers ---
+  const video = container.querySelector("#demo-video");
+  const playOverlay = container.querySelector("#video-play-overlay");
+  const overlayPlayIcon = container.querySelector("#overlay-play-icon");
+  const playBtn = container.querySelector("#video-play-btn");
+  const playBtnIcon = container.querySelector("#play-btn-icon");
+  const muteBtn = container.querySelector("#video-mute-btn");
+  const muteBtnIcon = container.querySelector("#mute-btn-icon");
+  const fullscreenBtn = container.querySelector("#video-fullscreen-btn");
+  const timeDisplay = container.querySelector("#video-time");
+  const progressBar = container.querySelector("#video-progress-bar");
+  const progressFill = container.querySelector("#video-progress-fill");
+  const progressHandle = container.querySelector("#video-progress-handle");
 
-  const queryResponses = {
-    bagan: {
-      question: "Bagan မှာ ဘယ်ဘုရားတွေ သွားသင့်လဲ။",
-      responseHtml: `
-        <div class="flex justify-between items-center pb-3 border-b border-outline-variant/20">
-          <span class="font-headline text-base text-primary font-bold tracking-tight">Bagan Top Temples</span>
-          <button class="speak-btn text-primary/60 hover:text-primary transition-colors flex items-center gap-1 text-xs font-semibold" data-speak="For Bagan, we highly recommend visiting: Ananda Temple, known as the architectural masterpiece. Dhammayangyi Temple, the largest and widest. And Shwezigon Pagoda, a prototype of Burmese stupas, completely gold plated.">
-            <span class="material-symbols-outlined font-light text-base">volume_up</span> Speak
-          </button>
-        </div>
-        <p class="font-body text-xs text-slate-gray italic mb-3">RAG Data Source: Union of Myanmar Travel Association (UMTA) verified heritage catalog.</p>
-        <ul class="font-body text-sm text-on-surface-variant space-y-3">
-          <li class="flex items-start gap-3">
-            <span class="w-1.5 h-1.5 mt-2 bg-primary rounded-full shrink-0"></span>
-            <span><strong class="text-on-surface font-semibold">Ananda Temple:</strong> Known as the architectural masterpiece of Bagan, built in 1105 AD.</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="w-1.5 h-1.5 mt-2 bg-primary rounded-full shrink-0"></span>
-            <span><strong class="text-on-surface font-semibold">Dhammayangyi Temple:</strong> The largest and widest temple, built in the late 12th century.</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="w-1.5 h-1.5 mt-2 bg-primary rounded-full shrink-0"></span>
-            <span><strong class="text-on-surface font-semibold">Shwezigon Pagoda:</strong> A prototype of Burmese stupas, completely gold-plated, finished in 1102 AD.</span>
-          </li>
-        </ul>
-        <div class="mt-4 rounded-md overflow-hidden border border-outline-variant/20 relative group">
-          <img alt="Bagan Map" class="w-full h-44 object-cover opacity-90 transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1D1eTSVmJco4gMvhvQnra4E235jK4b-qlmFQnYBxyr3j7uBOnxRWAx_ysr2M1qwUFy1_QuJyhJB_BMLzbF6-JbE2rSKWjGJvEbfCs4N8MpIiVBcvt7x4P8LJnSI3kkbxD07eiZ8bP0r_Gsm4-K9gr6yuC6DRGVZImLrwiXJ5wEuaMwEExci0vrc3oWMIyYWMREQERsECTSA47tXR7MEpdgfjpxAEjvEb84fb3kHnFNY4W00hx_h1Cwyu6xvvHIk_HkNgbcSdt0FSx"/>
-          <div class="absolute bottom-3 left-3">
-            <span class="font-label text-[9px] tracking-widest text-primary font-bold bg-white/95 px-3 py-1.5 border border-outline-variant/20 shadow-md uppercase rounded-[2px]">View Interactive Map</span>
-          </div>
-        </div>
-      `
-    },
-    emergency: {
-      question: "Yangon မှာ အရေးပေါ် ဖုန်းနံပါတ်တွေ ဘာတွေလဲ။",
-      responseHtml: `
-        <div class="flex justify-between items-center pb-3 border-b border-outline-variant/20">
-          <span class="font-headline text-base text-primary font-bold tracking-tight">Emergency Helplines</span>
-          <button class="speak-btn text-primary/60 hover:text-primary transition-colors flex items-center gap-1 text-xs font-semibold" data-speak="Here are the emergency numbers in Myanmar: Tourist Police hotline is 199 or 01-549209. Fire department is 191. Ambulance is 192. Always keep these handy.">
-            <span class="material-symbols-outlined font-light text-base">volume_up</span> Speak
-          </button>
-        </div>
-        <p class="font-body text-xs text-slate-gray italic mb-3">RAG Data Source: Myanmar Ministry of Hotels and Tourism Official Directory.</p>
-        <ul class="font-body text-sm text-on-surface-variant space-y-3">
-          <li class="flex items-start gap-3">
-            <span class="w-1.5 h-1.5 mt-2 bg-red-500 rounded-full shrink-0"></span>
-            <span><strong class="text-on-surface font-semibold">Tourist Police:</strong> 199 or 01-549209 (Active 24/7 with English support)</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="w-1.5 h-1.5 mt-2 bg-red-500 rounded-full shrink-0"></span>
-            <span><strong class="text-on-surface font-semibold">Fire Department:</strong> 191 (General emergency dispatch)</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="w-1.5 h-1.5 mt-2 bg-red-500 rounded-full shrink-0"></span>
-            <span><strong class="text-on-surface font-semibold">Ambulance Services:</strong> 192 (Red Cross & General Hospitals)</span>
-          </li>
-        </ul>
-      `
-    },
-    customs: {
-      question: "မြန်မာနိုင်ငံမှာ ဘာတွေ သတိထားရမလဲ။",
-      responseHtml: `
-        <div class="flex justify-between items-center pb-3 border-b border-outline-variant/20">
-          <span class="font-headline text-base text-primary font-bold tracking-tight">Cultural Etiquette</span>
-          <button class="speak-btn text-primary/60 hover:text-primary transition-colors flex items-center gap-1 text-xs font-semibold" data-speak="When visiting pagoda grounds, please remove your shoes and socks. Dress modestly, covering shoulders and knees. Never touch anyone on the head, as it is considered the most sacred part of the body.">
-            <span class="material-symbols-outlined font-light text-base">volume_up</span> Speak
-          </button>
-        </div>
-        <p class="font-body text-xs text-slate-gray italic mb-3">RAG Data Source: Union of Myanmar Travel Association (UMTA) cultural guides.</p>
-        <ul class="font-body text-sm text-on-surface-variant space-y-3">
-          <li class="flex items-start gap-3">
-            <span class="w-1.5 h-1.5 mt-2 bg-yellow-600 rounded-full shrink-0"></span>
-            <span><strong class="text-on-surface font-semibold">Footwear:</strong> Always remove shoes and socks before entering pagoda grounds and religious sites.</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="w-1.5 h-1.5 mt-2 bg-yellow-600 rounded-full shrink-0"></span>
-            <span><strong class="text-on-surface font-semibold">Modesty:</strong> Wear appropriate clothing (shoulders and knees covered). Avoid shorts and sleeveless shirts on pagoda grounds.</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="w-1.5 h-1.5 mt-2 bg-yellow-600 rounded-full shrink-0"></span>
-            <span><strong class="text-on-surface font-semibold">Sacred Head:</strong> Do not touch the head of a local, as it is traditionally regarded as the most spiritually sacred part of the body.</span>
-          </li>
-        </ul>
-      `
-    }
-  };
-
-  function scrollChatToBottom() {
-    chatMessages.scrollTop = chatMessages.scrollHeight;
-  }
-
-  function appendUserMessage(text) {
-    const msgDiv = document.createElement("div");
-    msgDiv.className = "flex items-start gap-4 flex-row-reverse";
-    msgDiv.innerHTML = `
-      <div class="w-10 h-10 rounded-full bg-surface-container-low border border-outline-variant/20 flex items-center justify-center shrink-0">
-        <span class="material-symbols-outlined text-primary font-light text-lg">person</span>
-      </div>
-      <div class="bg-primary/5 p-4 border border-outline-variant/10 max-w-[85%] rounded-l-xl rounded-br-xl text-right">
-        <p class="font-body text-sm text-on-surface myanmar-text">${text}</p>
-      </div>
-    `;
-    chatMessages.appendChild(msgDiv);
-    scrollChatToBottom();
-  }
-
-  function appendBotTypingIndicator() {
-    const indicatorDiv = document.createElement("div");
-    indicatorDiv.id = "chat-typing-indicator";
-    indicatorDiv.className = "flex items-start gap-4";
-    indicatorDiv.innerHTML = `
-      <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-md">
-        <span class="material-symbols-outlined text-white font-light text-lg">support_agent</span>
-      </div>
-      <div class="bg-white p-5 border border-outline-variant/30 max-w-[85%] rounded-r-xl rounded-bl-xl text-left shadow-sm flex items-center gap-1">
-        <span class="w-2.5 h-2.5 bg-primary/40 rounded-full animate-bounce" style="animation-delay: 0ms"></span>
-        <span class="w-2.5 h-2.5 bg-primary/60 rounded-full animate-bounce" style="animation-delay: 150ms"></span>
-        <span class="w-2.5 h-2.5 bg-primary/80 rounded-full animate-bounce" style="animation-delay: 300ms"></span>
-      </div>
-    `;
-    chatMessages.appendChild(indicatorDiv);
-    scrollChatToBottom();
-  }
-
-  function removeBotTypingIndicator() {
-    const ind = container.querySelector("#chat-typing-indicator");
-    if (ind) ind.remove();
-  }
-
-  function appendBotMessage(responseHtml) {
-    const msgDiv = document.createElement("div");
-    msgDiv.className = "flex items-start gap-4";
-    msgDiv.innerHTML = `
-      <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-md">
-        <span class="material-symbols-outlined text-white font-light text-lg">support_agent</span>
-      </div>
-      <div class="bg-white p-6 border border-outline-variant/30 max-w-[90%] flex flex-col gap-4 text-left shadow-sm rounded-r-xl rounded-bl-xl">
-        ${responseHtml}
-      </div>
-    `;
-    chatMessages.appendChild(msgDiv);
-    scrollChatToBottom();
-
-    // Bind speak functionality for this specific message
-    const speakBtn = msgDiv.querySelector(".speak-btn");
-    if (speakBtn) {
-      speakBtn.addEventListener("click", () => {
-        const textToSpeak = speakBtn.getAttribute("data-speak");
-        if (window.speechSynthesis) {
-          // Stop currently speaking
-          window.speechSynthesis.cancel();
-          const utterance = new SpeechSynthesisUtterance(textToSpeak);
-          utterance.lang = "en-US";
-          
-          // Visual feedback
-          const originalContent = speakBtn.innerHTML;
-          speakBtn.innerHTML = `<span class="material-symbols-outlined animate-pulse text-red-500 font-light text-base">graphic_eq</span> Speaking...`;
-          speakBtn.disabled = true;
-
-          utterance.onend = () => {
-            speakBtn.innerHTML = originalContent;
-            speakBtn.disabled = false;
-          };
-          utterance.onerror = () => {
-            speakBtn.innerHTML = originalContent;
-            speakBtn.disabled = false;
-          };
-
-          window.speechSynthesis.speak(utterance);
-        } else {
-          alert("Text-to-speech is not supported on this browser.");
-        }
-      });
+  // Play / Pause Logic
+  function togglePlay() {
+    if (video.paused) {
+      video.play().catch(err => console.log("Video play interrupted:", err));
+      overlayPlayIcon.textContent = "pause";
+      playBtnIcon.textContent = "pause";
+      playOverlay.classList.add("opacity-0", "pointer-events-none");
+    } else {
+      video.pause();
+      overlayPlayIcon.textContent = "play_arrow";
+      playBtnIcon.textContent = "play_arrow";
+      playOverlay.classList.remove("opacity-0", "pointer-events-none");
     }
   }
 
-  function triggerBotResponse(queryKey) {
-    appendBotTypingIndicator();
-    setTimeout(() => {
-      removeBotTypingIndicator();
-      const responseData = queryResponses[queryKey] || {
-        question: userInput.value,
-        responseHtml: `
-          <div class="flex justify-between items-center pb-3 border-b border-outline-variant/20">
-            <span class="font-headline text-base text-primary font-bold tracking-tight">Search Result</span>
-          </div>
-          <p class="font-body text-xs text-slate-gray italic mb-2">RAG Context: Generative matching...</p>
-          <p class="font-body text-sm text-on-surface-variant">
-            Thank you for asking about "<strong>${userInput.value}</strong>". This MVP is loaded with local guides for Bagan temples, emergency contact numbers, and basic cultural etiquette guidelines. Please select one of the preset options or visit our Features page for details!
-          </p>
-        `
-      };
-      appendBotMessage(responseData.responseHtml);
-      userInput.value = "";
-    }, 1200);
+  playOverlay.addEventListener("click", togglePlay);
+  playBtn.addEventListener("click", togglePlay);
+  video.addEventListener("click", togglePlay);
+
+  // Time Formatter
+  function formatTime(seconds) {
+    if (isNaN(seconds)) return "0:00";
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins}:${secs < 10 ? "0" : ""}${secs}`;
   }
 
-  // Bind preset query buttons
-  container.querySelectorAll(".quick-query-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      const queryType = btn.getAttribute("data-query");
-      const data = queryResponses[queryType];
-      if (data) {
-        appendUserMessage(data.question);
-        triggerBotResponse(queryType);
-      }
-    });
+  // Time & Progress Updates
+  video.addEventListener("timeupdate", () => {
+    if (video.duration) {
+      const percentage = (video.currentTime / video.duration) * 100;
+      progressFill.style.width = `${percentage}%`;
+      progressHandle.style.left = `${percentage}%`;
+      timeDisplay.textContent = `${formatTime(video.currentTime)} / ${formatTime(video.duration)}`;
+    }
   });
 
-  // Bind form submit
-  chatForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const val = userInput.value.trim();
-    if (!val) return;
-    appendUserMessage(val);
-    triggerBotResponse("custom");
+  video.addEventListener("loadedmetadata", () => {
+    timeDisplay.textContent = `0:00 / ${formatTime(video.duration)}`;
   });
 
-  // Scroll button
+  // Scrub progress
+  function scrub(e) {
+    const rect = progressBar.getBoundingClientRect();
+    const scrubTime = ((e.clientX - rect.left) / rect.width) * video.duration;
+    if (scrubTime >= 0 && scrubTime <= video.duration) {
+      video.currentTime = scrubTime;
+    }
+  }
+
+  let isMouseDown = false;
+  progressBar.addEventListener("click", scrub);
+  progressBar.addEventListener("mousedown", () => isMouseDown = true);
+  window.addEventListener("mouseup", () => isMouseDown = false);
+  window.addEventListener("mousemove", (e) => {
+    if (isMouseDown) scrub(e);
+  });
+
+  // Volume Mute Toggle
+  muteBtn.addEventListener("click", () => {
+    video.muted = !video.muted;
+    if (video.muted) {
+      muteBtnIcon.textContent = "volume_off";
+    } else {
+      muteBtnIcon.textContent = "volume_up";
+    }
+  });
+
+  // Fullscreen Action
+  fullscreenBtn.addEventListener("click", () => {
+    if (video.requestFullscreen) {
+      video.requestFullscreen();
+    } else if (video.mozRequestFullScreen) {
+      video.mozRequestFullScreen();
+    } else if (video.webkitRequestFullscreen) {
+      video.webkitRequestFullscreen();
+    } else if (video.msRequestFullscreen) {
+      video.msRequestFullscreen();
+    }
+  });
+
+  // Scroll to Video container
   const scrollBtn = container.querySelector("#scroll-to-chat");
   scrollBtn.addEventListener("click", () => {
     container.querySelector("#chat-simulator").scrollIntoView({ behavior: "smooth" });
