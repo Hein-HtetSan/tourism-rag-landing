@@ -70,8 +70,35 @@ export function renderTeam() {
             The engine driving the technical execution. This dedicated group of top-tier students from UCSY translates complex AI models into seamless, user-centric experiences, bridging theoretical knowledge with practical application.
           </p>
         </div>
-        <div class="lg:col-span-7 h-64 md:h-96 w-full bg-surface-dim overflow-hidden rounded-md border border-outline-variant/20 relative shadow-sm">
-          <img alt="Group of students working" class="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-9H3FmOwbBw5UOACvh3b1OIZ7YZ9Y4KFUOz3FDVNfeEqHau5WBiJvHk_jMK58_PlWykxasy3zD9Q0gml7NUetfbEwHyF9hhnGq_ogyMrRgA7vAIhed2VpCTXXvkojw-JPHueHVpL86D5r3kt1KGdPlbpFfuw5kol9pTxBXUs1fVGhgoQgiwj1IuyvJcbhpmu0tf4UY1soNt7TAP84ucEppC2yuJSkgmxIBLoNHR8RhYL-UhQggnwEM5yOYQ0KyDOQpUAXXl5FGgi4"/>
+        <div class="lg:col-span-7 bg-surface p-6 md:p-8 rounded-md border border-outline-variant/20 flex flex-col justify-center gap-4">
+          <h3 class="font-label-caps text-label-caps text-heritage-jade font-bold text-xs tracking-wider">TEAM MEMBERS</h3>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3">
+              <span class="w-2 h-2 rounded-full bg-heritage-jade shrink-0"></span>
+              <span class="font-body text-sm md:text-base text-ink-black font-medium">Hein Htet San</span>
+              <span class="font-body text-xs text-slate-gray ml-auto">Semester IX, Knowledge Engineering</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-2 h-2 rounded-full bg-heritage-jade shrink-0"></span>
+              <span class="font-body text-sm md:text-base text-ink-black font-medium">Lynn Myat Bhone</span>
+              <span class="font-body text-xs text-slate-gray ml-auto">Semester IX, Knowledge Engineering</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-2 h-2 rounded-full bg-heritage-jade shrink-0"></span>
+              <span class="font-body text-sm md:text-base text-ink-black font-medium">Wai Yan Tun</span>
+              <span class="font-body text-xs text-slate-gray ml-auto">Semester IX, Software Engineering</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-2 h-2 rounded-full bg-heritage-jade shrink-0"></span>
+              <span class="font-body text-sm md:text-base text-ink-black font-medium">Thin Han Soe</span>
+              <span class="font-body text-xs text-slate-gray ml-auto">Semester IX, Software Engineering</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-2 h-2 rounded-full bg-heritage-jade shrink-0"></span>
+              <span class="font-body text-sm md:text-base text-ink-black font-medium">Phyo Zaw Linn</span>
+              <span class="font-body text-xs text-slate-gray ml-auto">Semester IX, Software Engineering</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
