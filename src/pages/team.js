@@ -50,10 +50,10 @@ export function renderTeam() {
             <img alt="Daw Hnin Shwe Yee Win" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK29Sx1uOs4UPYPgkL1zahJn0xqObrBngkkpHeRGTj-vCx3ozuYzUZ0NH7TsB53sPAfZacLniHPmp0UCxUM58PVshdW0FcDYag3N0Vqj395cwxPbIXFRzohzk5tP3WSxd5HAxNW9VX7WUUe-dEYoqtBU85dhSh5AaiaywodnxOle6UIycj0iFbwxFWU5aLFk-_x8oIVuRgj-UP3abzwta_81BHdI7y9d3yUCqmUwfXevZ2OT_HWtZE8BESz52pxS_4o1BPPWol1hRd"/>
           </div>
           <div>
-            <h3 class="font-headline text-lg md:text-xl text-ink-black font-semibold mb-1">Daw Hnin Shwe Yee Win</h3>
-            <div class="font-label-caps text-label-caps text-heritage-jade mb-4 font-semibold text-[11px] tracking-wider">NLP & GIS Expert</div>
+            <h3 class="font-headline text-lg md:text-xl text-ink-black font-semibold mb-1">Dr. Daw Aye Nyein Mon</h3>
+            <div class="font-label-caps text-label-caps text-heritage-jade mb-4 font-semibold text-[11px] tracking-wider">Researcher & NLP Expert</div>
             <p class="font-body text-sm text-slate-gray leading-relaxed">
-              Leading the development of the core natural language processing engines and geographic information system integrations.
+              Leading the development of the core natural language processing engines integrations.
             </p>
           </div>
         </div>
