@@ -73,6 +73,7 @@
 
 h1.myanmar-text, h2.myanmar-text, h3.myanmar-text {
   font-family: 'Noto Sans Myanmar', 'Myanmar Sangam MN', 'Myanmar Text', 'Padauk', sans-serif !important;
+  font-weight: 300 !important;
   line-height: 1.35 !important;
   letter-spacing: normal !important;
 }

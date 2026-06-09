@@ -12,8 +12,8 @@ export function renderOverview() {
             UCSY x UMTA COLLABORATIVE MVP
           </span>
         </div>
-        <h1 class="font-headline text-4xl md:text-[56px] text-primary myanmar-text font-bold">
-          မြန်မာ့ခရီးသွားလုပ်ငန်းအတွက်<br/>AI Chatbot
+        <h1 class="font-headline text-4xl md:text-[56px] text-primary myanmar-text font-light">
+          မြန်မာ့ခရီးသွားလုပ်ငန်း<br/>အတွက်<br/>AI Chatbot
         </h1>
         <p class="font-body text-base md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
           A 24/7 bilingual assistant bridging the tourist call-center gap after 5:00 PM. Built with advanced Retrieval-Augmented Generation (RAG) by the Hackaware student team.
