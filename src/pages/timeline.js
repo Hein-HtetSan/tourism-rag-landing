@@ -13,9 +13,9 @@ export function renderTimeline() {
     </header>
 
     <!-- Vertical Timeline Container -->
-    <div class="relative pl-6 md:pl-0 md:max-w-4xl md:mx-auto text-left">
+    <div class="relative pl-4 md:pl-0 md:max-w-4xl md:mx-auto text-left">
       <!-- Continuous line background -->
-      <div class="absolute left-6 md:left-1/2 top-0 bottom-0 md:-ml-[1px] w-[2px] bg-secondary-fixed">
+      <div class="absolute left-4 md:left-1/2 top-0 bottom-0 md:-ml-[1px] w-[2px] bg-secondary-fixed">
         <!-- Active Indicator Line Overlay (simulated progress) -->
         <div class="absolute top-0 left-0 w-full h-[60%] timeline-line"></div>
       </div>
@@ -27,9 +27,9 @@ export function renderTimeline() {
           <span class="font-label-caps text-label-caps text-burnt-saffron block mb-2 font-bold text-xs tracking-widest">Feb 9, 2026</span>
         </div>
         <!-- Node -->
-        <div class="absolute -left-[31px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-burnt-saffron z-10 shadow-[0_0_0_4px_rgba(184,92,28,0.15)] transition-transform group-hover:scale-125 duration-300"></div>
+        <div class="absolute -left-[12px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-burnt-saffron z-10 shadow-[0_0_0_4px_rgba(184,92,28,0.15)] transition-transform group-hover:scale-125 duration-300"></div>
         <!-- Content card column -->
-        <div class="md:w-[45%] pl-8 md:pl-10 pt-1 md:pt-0">
+        <div class="md:w-[45%] pl-6 md:pl-10 pt-1 md:pt-0">
           <div class="bg-muted-silver border border-outline-variant/20 p-6 rounded-lg transition-all duration-300 group-hover:bg-white group-hover:border-primary group-hover:shadow-[0_8px_30px_rgb(0,38,34,0.03)]">
             <h3 class="font-headline text-lg md:text-xl text-ink-black font-semibold mb-2">Project Kick-off</h3>
             <p class="font-body text-sm text-slate-gray leading-relaxed">
@@ -46,9 +46,9 @@ export function renderTimeline() {
           <span class="font-label-caps text-label-caps text-burnt-saffron block mb-2 font-bold text-xs tracking-widest">Feb 20, 2026</span>
         </div>
         <!-- Node -->
-        <div class="absolute -left-[31px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-burnt-saffron z-10 shadow-[0_0_0_4px_rgba(184,92,28,0.15)] transition-transform group-hover:scale-125 duration-300 md:order-2"></div>
+        <div class="absolute -left-[12px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-burnt-saffron z-10 shadow-[0_0_0_4px_rgba(184,92,28,0.15)] transition-transform group-hover:scale-125 duration-300 md:order-2"></div>
         <!-- Content card column (Desktop Left) -->
-        <div class="md:w-[45%] pl-8 md:pl-10 md:pr-10 md:pl-0 pt-1 md:pt-0 md:order-1 text-left md:text-right">
+        <div class="md:w-[45%] pl-6 md:pr-10 md:pl-0 pt-1 md:pt-0 md:order-1 text-left md:text-right">
           <div class="bg-muted-silver border border-outline-variant/20 p-6 rounded-lg transition-all duration-300 group-hover:bg-white group-hover:border-primary group-hover:shadow-[0_8px_30px_rgb(0,38,34,0.03)]">
             <h3 class="font-headline text-lg md:text-xl text-ink-black font-semibold mb-2">Model Selection</h3>
             <p class="font-body text-sm text-slate-gray leading-relaxed">
@@ -65,9 +65,9 @@ export function renderTimeline() {
           <span class="font-label-caps text-label-caps text-burnt-saffron block mb-2 font-bold text-xs tracking-widest">April 15, 2026</span>
         </div>
         <!-- Node -->
-        <div class="absolute -left-[31px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-burnt-saffron z-10 shadow-[0_0_0_4px_rgba(184,92,28,0.15)] transition-transform group-hover:scale-125 duration-300"></div>
+        <div class="absolute -left-[12px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-burnt-saffron z-10 shadow-[0_0_0_4px_rgba(184,92,28,0.15)] transition-transform group-hover:scale-125 duration-300"></div>
         <!-- Content card column -->
-        <div class="md:w-[45%] pl-8 md:pl-10 pt-1 md:pt-0">
+        <div class="md:w-[45%] pl-6 md:pl-10 pt-1 md:pt-0">
           <div class="bg-muted-silver border border-outline-variant/20 p-6 rounded-lg transition-all duration-300 group-hover:bg-white group-hover:border-primary group-hover:shadow-[0_8px_30px_rgb(0,38,34,0.03)]">
             <h3 class="font-headline text-lg md:text-xl text-ink-black font-semibold mb-2">UMTA Partnership</h3>
             <p class="font-body text-sm text-slate-gray leading-relaxed">
@@ -84,9 +84,9 @@ export function renderTimeline() {
           <span class="font-label-caps text-label-caps text-slate-gray block mb-2 font-bold text-xs tracking-widest">June - Sept 2026</span>
         </div>
         <!-- Node -->
-        <div class="absolute -left-[31px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-secondary-fixed z-10 transition-transform group-hover:scale-125 duration-300 md:order-2"></div>
+        <div class="absolute -left-[12px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-secondary-fixed z-10 transition-transform group-hover:scale-125 duration-300 md:order-2"></div>
         <!-- Content card column -->
-        <div class="md:w-[45%] pl-8 md:pl-10 md:pr-10 md:pl-0 pt-1 md:pt-0 md:order-1 text-left md:text-right">
+        <div class="md:w-[45%] pl-6 md:pr-10 md:pl-0 pt-1 md:pt-0 md:order-1 text-left md:text-right">
           <div class="bg-white border border-outline-variant/20 p-6 rounded-lg transition-all duration-300 group-hover:border-primary group-hover:shadow-[0_8px_30px_rgb(0,38,34,0.03)]">
             <h3 class="font-headline text-lg md:text-xl text-ink-black font-semibold mb-2">Internship Phase</h3>
             <p class="font-body text-sm text-slate-gray leading-relaxed">
@@ -103,9 +103,9 @@ export function renderTimeline() {
           <span class="font-label-caps text-label-caps text-slate-gray block mb-2 font-bold text-xs tracking-widest">October 2026</span>
         </div>
         <!-- Node -->
-        <div class="absolute -left-[31px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-secondary-fixed z-10 transition-transform group-hover:scale-125 duration-300"></div>
+        <div class="absolute -left-[12px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-secondary-fixed z-10 transition-transform group-hover:scale-125 duration-300"></div>
         <!-- Content card column -->
-        <div class="md:w-[45%] pl-8 md:pl-10 pt-1 md:pt-0">
+        <div class="md:w-[45%] pl-6 md:pl-10 pt-1 md:pt-0">
           <div class="bg-white border border-outline-variant/20 p-6 rounded-lg transition-all duration-300 group-hover:border-primary group-hover:shadow-[0_8px_30px_rgb(0,38,34,0.03)]">
             <h3 class="font-headline text-lg md:text-xl text-ink-black font-semibold mb-2">Pilot Launch</h3>
             <p class="font-body text-sm text-slate-gray leading-relaxed">
