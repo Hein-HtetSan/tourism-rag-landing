@@ -46,7 +46,7 @@ export function renderOverview() {
         </div>
 
         <!-- Bot Response Card Row -->
-        <div class="flex items-start gap-4 justify-start w-full">
+        <div class="flex items-start gap-4 justify-end w-full">
           <!-- Bot Card -->
           <div class="bg-white p-6 border border-[#e5e7eb] max-w-[calc(100%-56px)] flex flex-col gap-4 text-left shadow-sm rounded">
             <!-- Bot Card Header -->
