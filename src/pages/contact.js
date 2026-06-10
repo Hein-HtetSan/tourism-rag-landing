@@ -8,107 +8,121 @@ export function renderContact() {
       <span class="font-label text-[11px] uppercase tracking-[0.3em] text-on-surface-variant mb-4 block font-bold">Get in Touch</span>
       <h1 class="font-display-lg text-4xl md:text-6xl text-ink-black font-bold mb-6">Contact & Support</h1>
       <p class="font-body text-base md:text-lg text-slate-gray leading-relaxed">
-        Have questions about the UMTA x UCSY AI Tourism Chatbot? Reach out to our research leads, student developers, or submit feedback regarding pilot kiosk deployments.
+        For official project inquiries, dataset coordination, or research collaborations, please reach out to the institutional representatives of UCSY and UMTA.
       </p>
     </header>
 
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 w-full max-w-6xl">
-      <!-- Contact Info Column -->
-      <div class="lg:col-span-5 space-y-10">
-        <div class="space-y-4">
-          <h2 class="font-headline text-2xl text-primary font-bold tracking-tight">Institutional Leads</h2>
-          <p class="font-body text-sm text-slate-gray leading-relaxed">
-            For official project inquiries, dataset coordination, or sponsorship of pilot kiosks, please contact the joint heads directly:
-          </p>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full max-w-6xl">
+      <!-- UCSY Contact Card -->
+      <div class="p-8 bg-white border border-outline-variant/30 rounded-lg hover:border-primary transition-all duration-300 flex flex-col justify-between shadow-sm">
+        <div class="space-y-6">
+          <div class="flex items-center justify-between border-b border-outline-variant/20 pb-4">
+            <span class="font-label text-[10px] tracking-widest text-heritage-jade font-bold uppercase">Academic Partner</span>
+            <span class="font-body text-xs text-slate-gray bg-[#f3f0ef] px-3 py-1 rounded-full font-medium">UCSY</span>
+          </div>
+          
+          <div class="space-y-2">
+            <h3 class="font-headline text-2xl font-bold text-ink-black">University of Computer Studies, Yangon</h3>
+            <p class="font-body text-sm text-slate-gray leading-relaxed">
+              One of the premier higher education institutions under the Ministry of Education, conducting teaching and research in computer science and technology.
+            </p>
+          </div>
+
+          <div class="space-y-4 pt-2">
+            <!-- Address -->
+            <div class="flex items-start gap-3 text-sm">
+              <span class="material-symbols-outlined text-heritage-jade text-lg shrink-0 mt-0.5">location_on</span>
+              <span class="font-body text-on-surface-variant">No.(4) Main Road, Shwe Pyi Thar Township, Yangon, Myanmar.</span>
+            </div>
+            
+            <!-- Phone Numbers -->
+            <div class="flex items-start gap-3 text-sm">
+              <span class="material-symbols-outlined text-heritage-jade text-lg shrink-0 mt-0.5">phone</span>
+              <div class="flex flex-col gap-1">
+                <span class="font-body text-on-surface-variant">Training Affair: <a href="tel:+959443440478" class="hover:text-primary transition-colors">(+95) 9 443440478</a></span>
+                <span class="font-body text-on-surface-variant">Student Affair: <a href="tel:+959443440479" class="hover:text-primary transition-colors">(+95) 9 443440479</a></span>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="flex items-center gap-3 text-sm">
+              <span class="material-symbols-outlined text-heritage-jade text-lg shrink-0">mail</span>
+              <span class="font-body text-on-surface-variant">
+                <a href="mailto:ucsy.admin@ucsy.edu.mm" class="hover:text-primary transition-colors">ucsy.admin@ucsy.edu.mm</a>
+              </span>
+            </div>
+          </div>
         </div>
 
-        <div class="space-y-6">
-          <!-- UCSY Contact -->
-          <div class="p-6 bg-white border border-outline-variant/30 rounded-lg flex flex-col gap-3">
-            <span class="font-label text-[10px] tracking-widest text-heritage-jade font-bold uppercase">UCSY Office</span>
-            <h3 class="font-headline text-lg font-bold text-ink-black">University of Computer Studies, Yangon</h3>
-            <p class="font-body text-sm text-slate-gray leading-relaxed">
-              Main Campus, Shwe Pyi Thar Township, Yangon, Myanmar
-            </p>
-            <div class="flex items-center gap-2 mt-2 font-body text-xs text-on-surface-variant/80">
-              <span class="material-symbols-outlined text-base">mail</span>
-              <span>info@ucsy.edu.mm</span>
-            </div>
-          </div>
-
-          <!-- UMTA Contact -->
-          <div class="p-6 bg-white border border-outline-variant/30 rounded-lg flex flex-col gap-3">
-            <span class="font-label text-[10px] tracking-widest text-heritage-jade font-bold uppercase">UMTA Headquarters</span>
-            <h3 class="font-headline text-lg font-bold text-ink-black">Union of Myanmar Travel Association</h3>
-            <p class="font-body text-sm text-slate-gray leading-relaxed">
-              No. 99, Ground Floor, Bo Aung Kyaw Street, Kyauktada Township, Yangon, Myanmar
-            </p>
-            <div class="flex items-center gap-2 mt-2 font-body text-xs text-on-surface-variant/80">
-              <span class="material-symbols-outlined text-base">mail</span>
-              <span>admin@tourismunion.org.mm</span>
-            </div>
-          </div>
+        <!-- Office Hours footer -->
+        <div class="border-t border-outline-variant/20 pt-6 mt-8 flex items-center gap-3 text-xs text-slate-gray font-medium">
+          <span class="material-symbols-outlined text-base">schedule</span>
+          <span>Monday – Friday, 09:00 AM – 04:00 PM</span>
         </div>
       </div>
 
-      <!-- Feedback Form Column -->
-      <div class="lg:col-span-7 bg-muted-silver p-8 md:p-10 rounded-lg border border-outline-variant/30 shadow-sm flex flex-col gap-6">
-        <div>
-          <h2 class="font-headline text-2xl text-ink-black font-bold mb-2">Send us a Message</h2>
-          <p class="font-body text-sm text-slate-gray">
-            Submit bugs, query feedback, or suggestions for custom RAG database integrations.
-          </p>
+      <!-- UMTA Contact Card -->
+      <div class="p-8 bg-white border border-outline-variant/30 rounded-lg hover:border-primary transition-all duration-300 flex flex-col justify-between shadow-sm">
+        <div class="space-y-6">
+          <div class="flex items-center justify-between border-b border-outline-variant/20 pb-4">
+            <span class="font-label text-[10px] tracking-widest text-heritage-jade font-bold uppercase">Industry Partner</span>
+            <span class="font-body text-xs text-slate-gray bg-[#f3f0ef] px-3 py-1 rounded-full font-medium">UMTA</span>
+          </div>
+
+          <div class="space-y-2">
+            <h3 class="font-headline text-2xl font-bold text-ink-black">Union of Myanmar Travel Association</h3>
+            <p class="font-body text-sm text-slate-gray leading-relaxed">
+              The official association representing Myanmar's private travel and tour operators, fostering standard-compliant development of tourism.
+            </p>
+          </div>
+
+          <div class="space-y-4 pt-2">
+            <!-- Address -->
+            <div class="flex items-start gap-3 text-sm">
+              <span class="material-symbols-outlined text-heritage-jade text-lg shrink-0 mt-0.5">location_on</span>
+              <span class="font-body text-on-surface-variant">No.(29), Room (802), 8th Floor, UMFCCI Building, Lanmadaw Township, Yangon, 11131 Myanmar.</span>
+            </div>
+
+            <!-- Phone / Mobile / Fax -->
+            <div class="flex items-start gap-3 text-sm">
+              <span class="material-symbols-outlined text-heritage-jade text-lg shrink-0 mt-0.5">phone</span>
+              <div class="flex flex-col gap-1">
+                <span class="font-body text-on-surface-variant">Landline: <a href="tel:+9512302330" class="hover:text-primary transition-colors">(+951) 2302330</a>, <a href="tel:+9512302331" class="hover:text-primary transition-colors">2302331</a>, <a href="tel:+9512314941" class="hover:text-primary transition-colors">2314941</a></span>
+                <span class="font-body text-on-surface-variant">Mobile: <a href="tel:+9592005648" class="hover:text-primary transition-colors">(+959) 2005648</a> (Office Hours)</span>
+                <span class="font-body text-on-surface-variant">Fax: (+951) 2314945</span>
+              </div>
+            </div>
+
+            <!-- Contact Persons -->
+            <div class="flex items-start gap-3 text-sm">
+              <span class="material-symbols-outlined text-heritage-jade text-lg shrink-0 mt-0.5">contacts</span>
+              <div class="flex flex-col gap-1">
+                <span class="font-body text-on-surface-variant font-medium text-xs text-slate-gray uppercase tracking-wider">Secretariat Team:</span>
+                <span class="font-body text-on-surface-variant">Daw May Thet Lwin (Secretary): <a href="tel:+9595170456" class="hover:text-primary transition-colors">095170456</a></span>
+                <span class="font-body text-on-surface-variant">Daw Kay Thwe Soe (Sec. Gen. 1): <a href="tel:+959260272076" class="hover:text-primary transition-colors">09260272076</a></span>
+                <span class="font-body text-on-surface-variant">U Kyaw Win Tun (Sec. Gen. 2): <a href="tel:+9595196936" class="hover:text-primary transition-colors">095196936</a></span>
+              </div>
+            </div>
+
+            <!-- Email & Web -->
+            <div class="flex items-start gap-3 text-sm">
+              <span class="material-symbols-outlined text-heritage-jade text-lg shrink-0 mt-0.5">language</span>
+              <div class="flex flex-col gap-1">
+                <span class="font-body text-on-surface-variant">Email: <a href="mailto:www.office@umtanet.org" class="hover:text-primary transition-colors">www.office@umtanet.org</a></span>
+                <span class="font-body text-on-surface-variant">Website: <a href="https://www.umtanet.org" target="_blank" class="hover:text-primary transition-colors">www.umtanet.org</a></span>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <form id="contact-form" class="space-y-4">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="flex flex-col gap-2">
-              <label for="form-name" class="font-label text-[10px] text-slate-gray uppercase tracking-wider font-bold">Your Name</label>
-              <input type="text" id="form-name" required class="bg-white border border-outline-variant/40 px-4 py-2.5 rounded font-body text-sm text-ink-black focus:outline-none focus:border-primary" placeholder="Enter name" />
-            </div>
-            <div class="flex flex-col gap-2">
-              <label for="form-email" class="font-label text-[10px] text-slate-gray uppercase tracking-wider font-bold">Email Address</label>
-              <input type="email" id="form-email" required class="bg-white border border-outline-variant/40 px-4 py-2.5 rounded font-body text-sm text-ink-black focus:outline-none focus:border-primary" placeholder="Enter email" />
-            </div>
-          </div>
-
-          <div class="flex flex-col gap-2">
-            <label for="form-subject" class="font-label text-[10px] text-slate-gray uppercase tracking-wider font-bold">Subject</label>
-            <input type="text" id="form-subject" required class="bg-white border border-outline-variant/40 px-4 py-2.5 rounded font-body text-sm text-ink-black focus:outline-none focus:border-primary" placeholder="Feedback/Bug Report/etc." />
-          </div>
-
-          <div class="flex flex-col gap-2">
-            <label for="form-message" class="font-label text-[10px] text-slate-gray uppercase tracking-wider font-bold">Message</label>
-            <textarea id="form-message" required rows="4" class="bg-white border border-outline-variant/40 px-4 py-2.5 rounded font-body text-sm text-ink-black focus:outline-none focus:border-primary resize-none" placeholder="Write message here..."></textarea>
-          </div>
-
-          <button type="submit" class="w-full bg-primary hover:bg-[#003833] text-white font-body text-sm font-semibold py-3 px-6 rounded transition-colors duration-200 mt-2 flex items-center justify-center gap-2">
-            <span class="material-symbols-outlined text-[18px]">send</span>
-            Submit Feedback
-          </button>
-        </form>
+        <!-- Office Hours footer -->
+        <div class="border-t border-outline-variant/20 pt-6 mt-8 flex items-center gap-3 text-xs text-slate-gray font-medium">
+          <span class="material-symbols-outlined text-base">schedule</span>
+          <span>Monday – Friday, 09:30 AM – 05:00 PM</span>
+        </div>
       </div>
     </div>
   `;
-
-  // Simple form interaction
-  const form = container.querySelector("#contact-form");
-  if (form) {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const btn = form.querySelector("button");
-      const originalText = btn.innerHTML;
-      btn.disabled = true;
-      btn.innerHTML = `<span class="material-symbols-outlined text-[18px] animate-spin">sync</span> Sending...`;
-
-      setTimeout(() => {
-        alert("Thank you! Your feedback has been submitted successfully.");
-        form.reset();
-        btn.disabled = false;
-        btn.innerHTML = originalText;
-      }, 1000);
-    });
-  }
 
   return container;
 }
