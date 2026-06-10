@@ -2,6 +2,9 @@ import { renderOverview } from "./pages/overview.js";
 import { renderFeatures } from "./pages/features.js";
 import { renderTimeline } from "./pages/timeline.js";
 import { renderTeam } from "./pages/team.js";
+import { renderPrivacy } from "./pages/privacy.js";
+import { renderTerms } from "./pages/terms.js";
+import { renderContact } from "./pages/contact.js";
 
 // Global stylesheet import
 import "./index.css";
@@ -15,6 +18,9 @@ const routes = {
   "#/features": renderFeatures,
   "#/timeline": renderTimeline,
   "#/team": renderTeam,
+  "#/privacy": renderPrivacy,
+  "#/terms": renderTerms,
+  "#/contact": renderContact,
 };
 
 function router() {

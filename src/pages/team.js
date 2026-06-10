@@ -18,11 +18,8 @@ export function renderTeam() {
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl mx-auto">
         <!-- Profile 1 -->
         <div class="ghost-border p-6 bg-white hover:bg-muted-silver transition-colors duration-300 flex flex-col gap-5">
-          <div class="w-24 h-24 rounded-full overflow-hidden bg-muted-silver border border-outline-variant/20 shadow-sm shrink-0">
-            <img alt="Prof. Daw Khin Mar Soe" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC03lVbgejBn-B2tB8jVzRIVGJ5OtZaKYt31imbhDAX8CGmJcXrUmutFDYivk334auO0byZV-3khCLnM7JV0aLlE2Y95qG9xBw4kU8fvs2nnBSISTUvqSvEZybwYEDD9-shOU47ByM_8F7hQ2vh0HSdzYCHMhmNACxWwe9Npbk2D1PxAINb20dHgoQ0IIHrPDul3kVrt5BYPpjtKrr0-CFvOSZQCpLQeia6e_McRzRQT81JQTm_b11c7Bdr2wbdCiVI-cN8qGgQmS3a"/>
-          </div>
           <div>
-            <h3 class="font-headline text-lg md:text-xl text-ink-black font-semibold mb-1">Prof. Daw Khin Mar Soe</h3>
+            <h3 class="font-headline text-lg md:text-2xl text-ink-black font-semibold mb-1">Prof. Khin Mar Soe</h3>
             <div class="font-label-caps text-label-caps text-heritage-jade mb-4 font-semibold text-[11px] tracking-wider">Academic Lead & Coordinator</div>
             <p class="font-body text-sm text-slate-gray leading-relaxed">
               Spearheading the academic vision and technological framework, bringing decades of research experience in artificial intelligence from UCSY.
@@ -32,11 +29,8 @@ export function renderTeam() {
 
         <!-- Profile 2 -->
         <div class="ghost-border p-6 bg-white hover:bg-muted-silver transition-colors duration-300 flex flex-col gap-5">
-          <div class="w-24 h-24 rounded-full overflow-hidden bg-muted-silver border border-outline-variant/20 shadow-sm shrink-0">
-            <img alt="U Aye Min Oo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP2lkuqejYXu0ZgJnzAtN-6GQaRlOgiQioQ8t58B0tw_QT6jeVe5W821YmsKacwL40bnO1ut6r8dpIju0JyaxvMi6et_wXXRSh1ScuWav8FIDHaC0qTOaaiH6B2Zw8YSGg8C8MVuT9381C_GqlYtrNt7QR6x6SlSIhZk_xTHMN73RypZRxbSnMFciensO54bV63Q_3Tx3qLWIHXEm_vbBHWAj6RG4DHk-WR_Fix-HKvVFN3CtaPElsjORFWuZ3xxZ8jC0DEEuc5EAO"/>
-          </div>
           <div>
-            <h3 class="font-headline text-lg md:text-xl text-ink-black font-semibold mb-1">U Aye Min Oo</h3>
+            <h3 class="font-headline text-lg md:text-2xl text-ink-black font-semibold mb-1">U Aye Min Oo</h3>
             <div class="font-label-caps text-label-caps text-heritage-jade mb-4 font-semibold text-[11px] tracking-wider">Industry Advisor (UMTA)</div>
             <p class="font-body text-sm text-slate-gray leading-relaxed">
               Providing critical industry insights and ensuring the chatbot meets the practical demands of the modern tourism sector.
@@ -46,11 +40,8 @@ export function renderTeam() {
 
         <!-- Profile 3 -->
         <div class="ghost-border p-6 bg-white hover:bg-muted-silver transition-colors duration-300 flex flex-col gap-5">
-          <div class="w-24 h-24 rounded-full overflow-hidden bg-muted-silver border border-outline-variant/20 shadow-sm shrink-0">
-            <img alt="Daw Hnin Shwe Yee Win" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK29Sx1uOs4UPYPgkL1zahJn0xqObrBngkkpHeRGTj-vCx3ozuYzUZ0NH7TsB53sPAfZacLniHPmp0UCxUM58PVshdW0FcDYag3N0Vqj395cwxPbIXFRzohzk5tP3WSxd5HAxNW9VX7WUUe-dEYoqtBU85dhSh5AaiaywodnxOle6UIycj0iFbwxFWU5aLFk-_x8oIVuRgj-UP3abzwta_81BHdI7y9d3yUCqmUwfXevZ2OT_HWtZE8BESz52pxS_4o1BPPWol1hRd"/>
-          </div>
           <div>
-            <h3 class="font-headline text-lg md:text-xl text-ink-black font-semibold mb-1">Dr. Daw Aye Nyein Mon</h3>
+            <h3 class="font-headline text-lg md:text-2xl text-ink-black font-semibold mb-1">Dr. Aye Nyein Mon</h3>
             <div class="font-label-caps text-label-caps text-heritage-jade mb-4 font-semibold text-[11px] tracking-wider">Researcher & NLP Expert</div>
             <p class="font-body text-sm text-slate-gray leading-relaxed">
               Leading the development of the core natural language processing engines integrations.
@@ -72,31 +63,41 @@ export function renderTeam() {
         </div>
         <div class="lg:col-span-7 bg-surface p-6 md:p-8 rounded-md border border-outline-variant/20 flex flex-col justify-center gap-4">
           <h3 class="font-label-caps text-label-caps text-heritage-jade font-bold text-xs tracking-wider">TEAM MEMBERS</h3>
-          <ul class="space-y-3">
-            <li class="flex items-center gap-3">
-              <span class="w-2 h-2 rounded-full bg-heritage-jade shrink-0"></span>
-              <span class="font-body text-sm md:text-base text-ink-black font-medium">Hein Htet San</span>
-              <span class="font-body text-xs text-slate-gray ml-auto">Semester IX, Knowledge Engineering</span>
+          <ul class="space-y-4">
+            <li class="flex items-start md:items-center gap-3">
+              <span class="w-2 h-2 rounded-full bg-heritage-jade shrink-0 mt-1.5 md:mt-0"></span>
+              <div class="flex flex-col md:flex-row md:items-center justify-between w-full gap-0.5 md:gap-3">
+                <span class="font-body text-sm md:text-base text-ink-black font-medium">Hein Htet San</span>
+                <span class="font-body text-xs text-slate-gray">Semester IX, Knowledge Engineering</span>
+              </div>
             </li>
-            <li class="flex items-center gap-3">
-              <span class="w-2 h-2 rounded-full bg-heritage-jade shrink-0"></span>
-              <span class="font-body text-sm md:text-base text-ink-black font-medium">Lynn Myat Bhone</span>
-              <span class="font-body text-xs text-slate-gray ml-auto">Semester IX, Knowledge Engineering</span>
+            <li class="flex items-start md:items-center gap-3">
+              <span class="w-2 h-2 rounded-full bg-heritage-jade shrink-0 mt-1.5 md:mt-0"></span>
+              <div class="flex flex-col md:flex-row md:items-center justify-between w-full gap-0.5 md:gap-3">
+                <span class="font-body text-sm md:text-base text-ink-black font-medium">Lynn Myat Bhone</span>
+                <span class="font-body text-xs text-slate-gray">Semester IX, Knowledge Engineering</span>
+              </div>
             </li>
-            <li class="flex items-center gap-3">
-              <span class="w-2 h-2 rounded-full bg-heritage-jade shrink-0"></span>
-              <span class="font-body text-sm md:text-base text-ink-black font-medium">Wai Yan Tun</span>
-              <span class="font-body text-xs text-slate-gray ml-auto">Semester IX, Software Engineering</span>
+            <li class="flex items-start md:items-center gap-3">
+              <span class="w-2 h-2 rounded-full bg-heritage-jade shrink-0 mt-1.5 md:mt-0"></span>
+              <div class="flex flex-col md:flex-row md:items-center justify-between w-full gap-0.5 md:gap-3">
+                <span class="font-body text-sm md:text-base text-ink-black font-medium">Wai Yan Tun</span>
+                <span class="font-body text-xs text-slate-gray">Semester IX, Software Engineering</span>
+              </div>
             </li>
-            <li class="flex items-center gap-3">
-              <span class="w-2 h-2 rounded-full bg-heritage-jade shrink-0"></span>
-              <span class="font-body text-sm md:text-base text-ink-black font-medium">Thin Han Soe</span>
-              <span class="font-body text-xs text-slate-gray ml-auto">Semester IX, Software Engineering</span>
+            <li class="flex items-start md:items-center gap-3">
+              <span class="w-2 h-2 rounded-full bg-heritage-jade shrink-0 mt-1.5 md:mt-0"></span>
+              <div class="flex flex-col md:flex-row md:items-center justify-between w-full gap-0.5 md:gap-3">
+                <span class="font-body text-sm md:text-base text-ink-black font-medium">Thi Han Soe</span>
+                <span class="font-body text-xs text-slate-gray">Semester IX, Software Engineering</span>
+              </div>
             </li>
-            <li class="flex items-center gap-3">
-              <span class="w-2 h-2 rounded-full bg-heritage-jade shrink-0"></span>
-              <span class="font-body text-sm md:text-base text-ink-black font-medium">Phyo Zaw Linn</span>
-              <span class="font-body text-xs text-slate-gray ml-auto">Semester IX, Software Engineering</span>
+            <li class="flex items-start md:items-center gap-3">
+              <span class="w-2 h-2 rounded-full bg-heritage-jade shrink-0 mt-1.5 md:mt-0"></span>
+              <div class="flex flex-col md:flex-row md:items-center justify-between w-full gap-0.5 md:gap-3">
+                <span class="font-body text-sm md:text-base text-ink-black font-medium">Phyo Zaw Linn</span>
+                <span class="font-body text-xs text-slate-gray">Semester IX, Software Engineering</span>
+              </div>
             </li>
           </ul>
         </div>

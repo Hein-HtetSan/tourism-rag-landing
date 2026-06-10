@@ -24,7 +24,7 @@ export function renderTimeline() {
 
       <!-- Milestone 1 (Left Desktop) — Feb 3 -->
       <div class="relative mb-12 md:mb-16 md:flex md:justify-between md:items-center group">
-        <div class="md:w-[45%] md:text-right pr-6 md:pr-10">
+        <div class="md:w-[45%] md:text-right pl-6 md:pl-0 pr-6 md:pr-10">
           <span class="font-label-caps text-label-caps text-burnt-saffron block mb-2 font-bold text-xs tracking-widest">Feb 3, 2026</span>
         </div>
         <div class="absolute -left-[12px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-burnt-saffron z-10 shadow-[0_0_0_4px_rgba(184,92,28,0.15)] transition-transform group-hover:scale-125 duration-300"></div>
@@ -40,7 +40,7 @@ export function renderTimeline() {
 
       <!-- Milestone 2 (Right Desktop) — Feb 9 -->
       <div class="relative mb-12 md:mb-16 md:flex md:justify-between md:items-center group">
-        <div class="md:w-[45%] md:text-right pr-6 md:pr-10 md:order-3">
+        <div class="md:w-[45%] md:text-right pl-6 md:pl-0 pr-6 md:pr-10 md:order-3">
           <span class="font-label-caps text-label-caps text-burnt-saffron block mb-2 font-bold text-xs tracking-widest">Feb 9, 2026</span>
         </div>
         <div class="absolute -left-[12px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-burnt-saffron z-10 shadow-[0_0_0_4px_rgba(184,92,28,0.15)] transition-transform group-hover:scale-125 duration-300 md:order-2"></div>
@@ -56,7 +56,7 @@ export function renderTimeline() {
 
       <!-- Milestone 3 (Left Desktop) — Feb 11 -->
       <div class="relative mb-12 md:mb-16 md:flex md:justify-between md:items-center group">
-        <div class="md:w-[45%] md:text-right pr-6 md:pr-10">
+        <div class="md:w-[45%] md:text-right pl-6 md:pl-0 pr-6 md:pr-10">
           <span class="font-label-caps text-label-caps text-burnt-saffron block mb-2 font-bold text-xs tracking-widest">Feb 11, 2026</span>
         </div>
         <div class="absolute -left-[12px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-burnt-saffron z-10 shadow-[0_0_0_4px_rgba(184,92,28,0.15)] transition-transform group-hover:scale-125 duration-300"></div>
@@ -74,7 +74,7 @@ export function renderTimeline() {
 
       <!-- Milestone 4 (Right Desktop) — Feb 15-16 -->
       <div class="relative mb-12 md:mb-16 md:flex md:justify-between md:items-center group">
-        <div class="md:w-[45%] md:text-right pr-6 md:pr-10 md:order-3">
+        <div class="md:w-[45%] md:text-right pl-6 md:pl-0 pr-6 md:pr-10 md:order-3">
           <span class="font-label-caps text-label-caps text-burnt-saffron block mb-2 font-bold text-xs tracking-widest">Feb 15–16, 2026</span>
         </div>
         <div class="absolute -left-[12px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-burnt-saffron z-10 shadow-[0_0_0_4px_rgba(184,92,28,0.15)] transition-transform group-hover:scale-125 duration-300 md:order-2"></div>
@@ -90,7 +90,7 @@ export function renderTimeline() {
 
       <!-- Milestone 5 (Left Desktop) — Feb 20 -->
       <div class="relative mb-12 md:mb-16 md:flex md:justify-between md:items-center group">
-        <div class="md:w-[45%] md:text-right pr-6 md:pr-10">
+        <div class="md:w-[45%] md:text-right pl-6 md:pl-0 pr-6 md:pr-10">
           <span class="font-label-caps text-label-caps text-burnt-saffron block mb-2 font-bold text-xs tracking-widest">Feb 20, 2026</span>
         </div>
         <div class="absolute -left-[12px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-burnt-saffron z-10 shadow-[0_0_0_4px_rgba(184,92,28,0.15)] transition-transform group-hover:scale-125 duration-300"></div>
@@ -106,7 +106,7 @@ export function renderTimeline() {
 
       <!-- Milestone 6 (Right Desktop) — Feb 25 -->
       <div class="relative mb-12 md:mb-16 md:flex md:justify-between md:items-center group">
-        <div class="md:w-[45%] md:text-right pr-6 md:pr-10 md:order-3">
+        <div class="md:w-[45%] md:text-right pl-6 md:pl-0 pr-6 md:pr-10 md:order-3">
           <span class="font-label-caps text-label-caps text-burnt-saffron block mb-2 font-bold text-xs tracking-widest">Feb 25, 2026</span>
         </div>
         <div class="absolute -left-[12px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-burnt-saffron z-10 shadow-[0_0_0_4px_rgba(184,92,28,0.15)] transition-transform group-hover:scale-125 duration-300 md:order-2"></div>
@@ -122,7 +122,7 @@ export function renderTimeline() {
 
       <!-- Milestone 7 (Left Desktop) — March 29 -->
       <div class="relative mb-12 md:mb-16 md:flex md:justify-between md:items-center group">
-        <div class="md:w-[45%] md:text-right pr-6 md:pr-10">
+        <div class="md:w-[45%] md:text-right pl-6 md:pl-0 pr-6 md:pr-10">
           <span class="font-label-caps text-label-caps text-burnt-saffron block mb-2 font-bold text-xs tracking-widest">Mar 29, 2026</span>
         </div>
         <div class="absolute -left-[12px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-burnt-saffron z-10 shadow-[0_0_0_4px_rgba(184,92,28,0.15)] transition-transform group-hover:scale-125 duration-300"></div>
@@ -138,7 +138,7 @@ export function renderTimeline() {
 
       <!-- Milestone 8 (Right Desktop) — March 31 -->
       <div class="relative mb-12 md:mb-16 md:flex md:justify-between md:items-center group">
-        <div class="md:w-[45%] md:text-right pr-6 md:pr-10 md:order-3">
+        <div class="md:w-[45%] md:text-right pl-6 md:pl-0 pr-6 md:pr-10 md:order-3">
           <span class="font-label-caps text-label-caps text-burnt-saffron block mb-2 font-bold text-xs tracking-widest">Mar 31, 2026</span>
         </div>
         <div class="absolute -left-[12px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-burnt-saffron z-10 shadow-[0_0_0_4px_rgba(184,92,28,0.15)] transition-transform group-hover:scale-125 duration-300 md:order-2"></div>
@@ -154,7 +154,7 @@ export function renderTimeline() {
 
       <!-- Milestone 9 (Left Desktop) — April 14 -->
       <div class="relative mb-12 md:mb-16 md:flex md:justify-between md:items-center group">
-        <div class="md:w-[45%] md:text-right pr-6 md:pr-10">
+        <div class="md:w-[45%] md:text-right pl-6 md:pl-0 pr-6 md:pr-10">
           <span class="font-label-caps text-label-caps text-burnt-saffron block mb-2 font-bold text-xs tracking-widest">April 14, 2026</span>
         </div>
         <div class="absolute -left-[12px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-burnt-saffron z-10 shadow-[0_0_0_4px_rgba(184,92,28,0.15)] transition-transform group-hover:scale-125 duration-300"></div>
@@ -170,7 +170,7 @@ export function renderTimeline() {
 
       <!-- Milestone 10 (Right Desktop) — April 27 -->
       <div class="relative mb-12 md:mb-16 md:flex md:justify-between md:items-center group">
-        <div class="md:w-[45%] md:text-right pr-6 md:pr-10 md:order-3">
+        <div class="md:w-[45%] md:text-right pl-6 md:pl-0 pr-6 md:pr-10 md:order-3">
           <span class="font-label-caps text-label-caps text-burnt-saffron block mb-2 font-bold text-xs tracking-widest">April 27, 2026</span>
         </div>
         <div class="absolute -left-[12px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-burnt-saffron z-10 shadow-[0_0_0_4px_rgba(184,92,28,0.15)] transition-transform group-hover:scale-125 duration-300 md:order-2"></div>
@@ -186,7 +186,7 @@ export function renderTimeline() {
 
       <!-- Milestone 11 (Left Desktop) — May 5 -->
       <div class="relative mb-12 md:mb-16 md:flex md:justify-between md:items-center group">
-        <div class="md:w-[45%] md:text-right pr-6 md:pr-10">
+        <div class="md:w-[45%] md:text-right pl-6 md:pl-0 pr-6 md:pr-10">
           <span class="font-label-caps text-label-caps text-burnt-saffron block mb-2 font-bold text-xs tracking-widest">May 5, 2026</span>
         </div>
         <div class="absolute -left-[12px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-burnt-saffron z-10 shadow-[0_0_0_4px_rgba(184,92,28,0.15)] transition-transform group-hover:scale-125 duration-300"></div>
@@ -202,7 +202,7 @@ export function renderTimeline() {
 
       <!-- Milestone 12 (Right Desktop) — June 5 -->
       <div class="relative mb-12 md:mb-16 md:flex md:justify-between md:items-center group">
-        <div class="md:w-[45%] md:text-right pr-6 md:pr-10 md:order-3">
+        <div class="md:w-[45%] md:text-right pl-6 md:pl-0 pr-6 md:pr-10 md:order-3">
           <span class="font-label-caps text-label-caps text-burnt-saffron block mb-2 font-bold text-xs tracking-widest">June 5, 2026</span>
         </div>
         <div class="absolute -left-[12px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-burnt-saffron z-10 shadow-[0_0_0_4px_rgba(184,92,28,0.15)] transition-transform group-hover:scale-125 duration-300 md:order-2"></div>
@@ -218,7 +218,7 @@ export function renderTimeline() {
 
       <!-- Milestone 13 (Left Desktop) — June 18 - Upcoming -->
       <div class="relative mb-12 md:mb-16 md:flex md:justify-between md:items-center group">
-        <div class="md:w-[45%] md:text-right pr-6 md:pr-10">
+        <div class="md:w-[45%] md:text-right pl-6 md:pl-0 pr-6 md:pr-10">
           <span class="font-label-caps text-label-caps text-burnt-saffron block mb-2 font-bold text-xs tracking-widest">June 18, 2026</span>
         </div>
         <div class="absolute -left-[12px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-burnt-saffron z-10 shadow-[0_0_0_4px_rgba(184,92,28,0.15)] transition-transform group-hover:scale-125 duration-300"></div>
@@ -234,7 +234,7 @@ export function renderTimeline() {
 
       <!-- Milestone 14 (Right Desktop) — June–Sept - Future -->
       <div class="relative mb-12 md:mb-16 md:flex md:justify-between md:items-center group">
-        <div class="md:w-[45%] md:text-right pr-6 md:pr-10 md:order-3">
+        <div class="md:w-[45%] md:text-right pl-6 md:pl-0 pr-6 md:pr-10 md:order-3">
           <span class="font-label-caps text-label-caps text-slate-gray block mb-2 font-bold text-xs tracking-widest">June – Sept 2026</span>
         </div>
         <div class="absolute -left-[12px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-secondary-fixed z-10 transition-transform group-hover:scale-125 duration-300 md:order-2"></div>
@@ -250,7 +250,7 @@ export function renderTimeline() {
 
       <!-- Milestone 15 (Left Desktop) — October - Future -->
       <div class="relative md:flex md:justify-between md:items-center group">
-        <div class="md:w-[45%] md:text-right pr-6 md:pr-10">
+        <div class="md:w-[45%] md:text-right pl-6 md:pl-0 pr-6 md:pr-10">
           <span class="font-label-caps text-label-caps text-slate-gray block mb-2 font-bold text-xs tracking-widest">October 2026</span>
         </div>
         <div class="absolute -left-[12px] md:left-1/2 md:-ml-3 top-0 md:top-auto w-6 h-6 rounded-full border-4 border-white bg-secondary-fixed z-10 transition-transform group-hover:scale-125 duration-300"></div>

@@ -6,11 +6,10 @@ export function renderOverview() {
     <!-- Hero Section -->
     <section class="py-12 md:py-20 flex flex-col items-center text-center">
       <div class="flex flex-col items-center gap-6 md:gap-8 max-w-4xl mx-auto">
-        <div class="inline-flex items-center gap-3 px-5 py-2 bg-white border border-outline-variant/40 rounded-full shadow-sm">
-          <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-          <span class="font-label text-[10px] md:text-[11px] text-on-surface-variant uppercase tracking-[0.2em] font-bold">
-            UCSY x UMTA COLLABORATIVE MVP
-          </span>
+        <div class="inline-flex items-center gap-4 px-6 py-2">
+          <img src="/ucsy-logo.png" alt="UCSY Logo" class="h-12 md:h-16 w-auto object-contain" />
+          <span class="font-label text-xs text-on-surface-variant/50 font-bold uppercase select-none ml-4">x</span>
+          <img src="/umta-logo.png" alt="UMTA Logo" class="h-12 md:h-16 w-auto object-contain" />
         </div>
         <h1 class="font-headline text-4xl md:text-[56px] text-primary myanmar-text font-light">
           မြန်မာ့ခရီးသွားလုပ်ငန်း<br/>အတွက်<br/>AI Chatbot
@@ -201,7 +200,7 @@ export function renderOverview() {
         window.speechSynthesis.cancel();
         const utterance = new SpeechSynthesisUtterance(textToSpeak);
         utterance.lang = "en-US";
-        
+
         const originalContent = speakBtn.innerHTML;
         speakBtn.innerHTML = `<span class="material-symbols-outlined animate-pulse text-red-500 font-light text-base">graphic_eq</span>`;
         speakBtn.disabled = true;
