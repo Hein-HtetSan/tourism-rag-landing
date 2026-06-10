@@ -20,7 +20,7 @@ export function renderOverview() {
         <div class="flex flex-wrap justify-center gap-4 md:gap-6 pt-4">
           <button id="scroll-to-chat" class="btn-primary flex items-center gap-3">
             <span class="material-symbols-outlined text-[20px] font-light">smart_toy</span>
-            Try Demo Bot
+            Try Demo
           </button>
           <a href="#/timeline" class="btn-secondary flex items-center gap-3">
             <span class="material-symbols-outlined text-[20px] font-light">description</span>
