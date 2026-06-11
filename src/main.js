@@ -74,11 +74,11 @@ function updateNavLinks(activeHash) {
 // Sticky Header Scrolled State
 window.addEventListener("scroll", () => {
   if (window.scrollY > 10) {
-    header.classList.add("shadow-md", "py-4");
-    header.classList.remove("py-5");
+    header.classList.add("shadow-md", "py-3", "md:py-4");
+    header.classList.remove("py-4", "md:py-6");
   } else {
-    header.classList.remove("shadow-md", "py-4");
-    header.classList.add("py-5");
+    header.classList.remove("shadow-md", "py-3", "md:py-4");
+    header.classList.add("py-4", "md:py-6");
   }
 });
 

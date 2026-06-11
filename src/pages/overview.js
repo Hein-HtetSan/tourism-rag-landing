@@ -6,10 +6,14 @@ export function renderOverview() {
     <!-- Hero Section -->
     <section class="py-12 md:py-20 flex flex-col items-center text-center">
       <div class="flex flex-col items-center gap-6 md:gap-8 max-w-4xl mx-auto">
-        <div class="inline-flex items-center gap-4 px-6 py-2">
-          <img src="/ucsy-logo.png" alt="UCSY Logo" class="h-12 md:h-16 w-auto object-contain" />
-          <span class="font-label text-xs text-on-surface-variant/50 font-bold uppercase select-none ml-4">x</span>
-          <img src="/umta-logo.png" alt="UMTA Logo" class="h-12 md:h-16 w-auto object-contain" />
+        <div class="flex items-center justify-center w-full max-w-[320px] md:max-w-[400px] mx-auto">
+          <div class="flex-1 flex justify-end pr-4">
+            <img src="/ucsy-logo.png" alt="UCSY Logo" class="h-12 md:h-16 w-auto object-contain" />
+          </div>
+          <span class="font-label text-xs text-on-surface-variant/50 font-bold uppercase select-none shrink-0 ml-3">x</span>
+          <div class="flex-1 flex justify-start pl-4">
+            <img src="/umta-logo.png" alt="UMTA Logo" class="h-12 md:h-16 w-auto object-contain" />
+          </div>
         </div>
         <h1 class="font-headline text-4xl md:text-[56px] text-primary myanmar-text font-light">
           မြန်မာ့ခရီးသွားလုပ်ငန်း<br/>အတွက်<br/>AI Chatbot
