@@ -78,6 +78,24 @@ export function renderOverview() {
       </div>
     </section>
 
+    <!-- Video Demo Section -->
+    <section class="py-16 md:py-24 border-t border-outline-variant/10 flex flex-col items-center">
+      <div class="text-center mb-12 max-w-3xl mx-auto">
+        <span class="font-label text-[11px] uppercase tracking-[0.3em] text-on-surface-variant mb-4 block font-bold">Demonstration</span>
+        <h2 class="text-3xl md:text-5xl font-headline font-bold text-primary tracking-tight mb-4">Chatbot in Action</h2>
+        <p class="text-base md:text-lg text-slate-gray leading-relaxed max-w-2xl">
+          Watch a live walkthrough of the bilingual voice and text-enabled RAG assistant, showing search responses, map interaction, and voice synthesis.
+        </p>
+      </div>
+
+      <div class="w-full max-w-4xl mx-auto rounded-xl overflow-hidden border border-outline-variant/30 shadow-[0_20px_50px_rgba(0,38,34,0.05)] bg-black aspect-video relative">
+        <video class="w-full h-full object-cover" controls preload="metadata" playsinline>
+          <source src="/videos/Myanmar_Tourism_AI_Chatbot%20(2).mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
     <!-- Launch Badges -->
     <section class="py-20 md:py-24 border-t border-b border-outline-variant/20 flex flex-wrap justify-center items-center gap-12 md:gap-24">
       <!-- Badge 1: Collaboration -->

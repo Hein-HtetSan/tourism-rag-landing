@@ -20,7 +20,7 @@ export function renderTeam() {
         <div class="ghost-border p-6 bg-white hover:bg-muted-silver transition-colors duration-300 flex flex-col gap-5">
           <div>
             <h3 class="font-headline text-lg md:text-2xl text-ink-black font-semibold mb-1">Prof. Khin Mar Soe</h3>
-            <div class="font-label-caps text-label-caps text-heritage-jade mb-4 font-semibold text-[11px] tracking-wider">Academic Lead & Coordinator</div>
+            <div class="font-label-caps text-label-caps text-heritage-jade mb-4 font-semibold text-[11px] tracking-wider">Academic Lead & Coordinator (Natural Language Processing Lab, UCSY)</div>
             <p class="font-body text-sm text-slate-gray leading-relaxed">
               Spearheading the academic vision and technological framework, bringing decades of research experience in artificial intelligence from UCSY.
             </p>
@@ -42,7 +42,7 @@ export function renderTeam() {
         <div class="ghost-border p-6 bg-white hover:bg-muted-silver transition-colors duration-300 flex flex-col gap-5">
           <div>
             <h3 class="font-headline text-lg md:text-2xl text-ink-black font-semibold mb-1">Dr. Aye Nyein Mon</h3>
-            <div class="font-label-caps text-label-caps text-heritage-jade mb-4 font-semibold text-[11px] tracking-wider">Researcher & NLP Expert</div>
+            <div class="font-label-caps text-label-caps text-heritage-jade mb-4 font-semibold text-[11px] tracking-wider">Researcher (Natural Language Processing Lab, UCSY)</div>
             <p class="font-body text-sm text-slate-gray leading-relaxed">
               Leading the development of the core natural language processing engines integrations.
             </p>
@@ -60,6 +60,12 @@ export function renderTeam() {
           <p class="font-body text-sm md:text-base text-slate-gray leading-relaxed">
             The engine driving the technical execution. This dedicated group of top-tier students from UCSY translates complex AI models into seamless, user-centric experiences, bridging theoretical knowledge with practical application.
           </p>
+          <div class="border-t border-outline-variant/30 pt-4 mt-2">
+            <h4 class="font-label-caps text-label-caps text-heritage-jade font-bold text-[10px] tracking-wider mb-2">Data Collection & Pre-processing Support</h4>
+            <p class="font-body text-xs md:text-sm text-slate-gray leading-relaxed">
+              Special thanks to the student contributors from <strong>Semester VI, VIII, and IX</strong> who assisted in extensive data collection and data pre-processing to supplement and expand the chatbot's core tourism knowledge base.
+            </p>
+          </div>
         </div>
         <div class="lg:col-span-7 bg-surface p-6 md:p-8 rounded-md border border-outline-variant/20 flex flex-col justify-center gap-4">
           <h3 class="font-label-caps text-label-caps text-heritage-jade font-bold text-xs tracking-wider">TEAM MEMBERS</h3>
