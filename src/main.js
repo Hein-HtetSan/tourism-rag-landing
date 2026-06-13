@@ -105,18 +105,9 @@ document.querySelectorAll("#mobile-menu a").forEach((link) => {
   });
 });
 
-// Bind scroll behavior to Get Started buttons
+// Bind Get Started buttons to open the demo site in a new tab
 function handleGetStartedClick() {
-  if (window.location.hash !== "#/overview") {
-    window.location.hash = "#/overview";
-    setTimeout(() => {
-      const chatSim = document.getElementById("chat-simulator");
-      if (chatSim) chatSim.scrollIntoView({ behavior: "smooth" });
-    }, 150);
-  } else {
-    const chatSim = document.getElementById("chat-simulator");
-    if (chatSim) chatSim.scrollIntoView({ behavior: "smooth" });
-  }
+  window.open("https://tourism.heinhtetsan.xyz", "_blank", "noopener,noreferrer");
 }
 
 // Bind events after elements are in DOM

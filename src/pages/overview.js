@@ -6,13 +6,13 @@ export function renderOverview() {
     <!-- Hero Section -->
     <section class="py-12 md:py-20 flex flex-col items-center text-center">
       <div class="flex flex-col items-center gap-6 md:gap-8 max-w-4xl mx-auto">
-        <div class="flex items-center justify-center w-full max-w-[320px] md:max-w-[400px] mx-auto">
+        <div class="flex items-center justify-center w-full max-w-[360px] md:max-w-[480px] mx-auto mb-4 md:mb-3">
           <div class="flex-1 flex justify-end pr-4">
-            <img src="/ucsy-logo.png" alt="UCSY Logo" class="h-12 md:h-16 w-auto object-contain" />
+            <img src="/ucsy-logo.png" alt="UCSY Logo" class="h-16 md:h-20 w-auto object-contain" />
           </div>
           <span class="font-label text-xs text-on-surface-variant/50 font-bold uppercase select-none shrink-0 ml-3">x</span>
           <div class="flex-1 flex justify-start pl-4">
-            <img src="/umta-logo.png" alt="UMTA Logo" class="h-12 md:h-16 w-auto object-contain" />
+            <img src="/umta-logo.png" alt="UMTA Logo" class="h-16 md:h-20 w-auto object-contain" />
           </div>
         </div>
         <h1 class="font-headline text-4xl md:text-[56px] text-primary myanmar-text font-light">
@@ -22,10 +22,10 @@ export function renderOverview() {
           A 24/7 bilingual assistant bridging the tourist call-center gap after 5:00 PM. Built with advanced Retrieval-Augmented Generation (RAG) by the Hackaware student team.
         </p>
         <div class="flex flex-wrap justify-center gap-4 md:gap-6 pt-4">
-          <button id="scroll-to-chat" class="btn-primary flex items-center gap-3">
+          <a href="https://tourism.heinhtetsan.xyz" target="_blank" rel="noopener noreferrer" id="scroll-to-chat" class="btn-primary flex items-center gap-3">
             <span class="material-symbols-outlined text-[20px] font-light">smart_toy</span>
             Try Demo
-          </button>
+          </a>
           <a href="#/timeline" class="btn-secondary flex items-center gap-3">
             <span class="material-symbols-outlined text-[20px] font-light">description</span>
             View Project Milestones
@@ -243,11 +243,7 @@ export function renderOverview() {
     });
   }
 
-  // Scroll button
-  const scrollBtn = container.querySelector("#scroll-to-chat");
-  scrollBtn.addEventListener("click", () => {
-    container.querySelector("#chat-simulator").scrollIntoView({ behavior: "smooth" });
-  });
+  // "Try Demo" button now links externally — no scroll handler needed
 
   return container;
 }
